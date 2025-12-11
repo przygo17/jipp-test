@@ -111,13 +111,58 @@
 //}
 
 // zadanie 4
-int n = 3;
+//int n = 5;
 
-for (int i = 1; i <= n; i++)
-{
-    for (int j = 1; j <= i; j++)
-    {
-        Console.Write("*");
-    }
-    Console.WriteLine();
-}
+//for (int i = 1; i <= n; i++)
+//{
+//    for (int j = 1; j <= i; j++)
+//    {
+//        Console.Write("*");
+//    }
+//    Console.WriteLine();
+//}
+
+// zadanie 5
+
+//int exam = 57;
+
+//if (exam < 0 || exam > 100)
+//{
+//    Console.WriteLine(" Wartość poza zakresem");
+//}
+//else if (exam <= 39)
+//{
+//    Console.WriteLine("Ocena: Niedostateczna");
+//}
+//else if (exam <= 54)
+//{
+//    Console.WriteLine("Ocena: Dopuszczająca");
+//}
+//else if (exam <= 69)
+//{
+//    Console.WriteLine("Ocena: Dopuszczająca");
+//}
+//else if (exam <= 84)
+//{
+//    Console.WriteLine("Ocena: Dobra");
+//}
+//else if (exam <= 98)
+//{
+//    Console.WriteLine("Ocena: Bardzo dobra");
+//}
+//else
+//{
+//    Console.WriteLine("Ocena: Celująca");
+//}
+
+// Kolekcje
+// zadanie 1
+
+string[] colors = new string[4];
+colors[0] = "Czerwony";
+colors[1] = "Zielony";
+colors[2] = "Niebieski";
+colors[3] = "Żółty";
+
+Console.WriteLine("Mój pierwszy kolor to: " + colors[0]);
+Console.WriteLine("Mój ostatni kolor to: " + colors[3]);
