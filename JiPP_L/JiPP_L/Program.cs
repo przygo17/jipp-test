@@ -158,11 +158,58 @@
 // Kolekcje
 // zadanie 1
 
-string[] colors = new string[4];
-colors[0] = "Czerwony";
-colors[1] = "Zielony";
-colors[2] = "Niebieski";
-colors[3] = "Żółty";
+//string[] colors = new string[4];
+//colors[0] = "Czerwony";
+//colors[1] = "Zielony";
+//colors[2] = "Niebieski";
+//colors[3] = "Żółty";
 
-Console.WriteLine("Mój pierwszy kolor to: " + colors[0]);
-Console.WriteLine("Mój ostatni kolor to: " + colors[3]);
+//Console.WriteLine("Mój pierwszy kolor to: " + colors[0]);
+//Console.WriteLine("Mój ostatni kolor to: " + colors[3]);
+
+// zadanie 2
+
+//int[] numbers = { 1, 2, 3, 4, 5, 6, 7, 8, 9, 10 };
+
+//pętla for
+//for (int i = 0; i < numbers.Length; i++)
+//{
+//    Console.WriteLine("Liczba: " + numbers[i]);
+//}
+
+////pętla foreach
+
+//foreach (int number in numbers)
+//{
+//    Console.WriteLine("Liczba: " + number);
+//}
+
+//pętla while
+//int i = 0;
+//int count = numbers.Length;
+
+//do {
+//    Console.WriteLine("Liczba: " + numbers[i]);
+//    i++;
+//} while (i < count);
+
+// zadanie 3
+List<string> fruits = new List<string>();
+
+fruits.Add("Pomidor");
+fruits.Add("Jabłko");
+fruits.Add("Marchewka");
+fruits.Add("Gruszka");
+
+Console.WriteLine("Wszystkie owoce: ");
+Console.WriteLine(string.Join(", ", fruits));
+
+fruits.RemoveAt(0);
+fruits.Remove("Gruszka");
+
+Console.WriteLine("Owoce po usunięciu: ");
+foreach (string fruit in fruits)
+{
+    Console.WriteLine(fruit);
+}
+Console.ReadKey();
